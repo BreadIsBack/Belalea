@@ -1,0 +1,55 @@
+.nav {
+  @include big-desktop {
+    position: fixed;
+    display: block;
+    padding: 30px;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    width: 33%;
+    height: 100vh;
+    z-index: 900;
+    background-color: var(--light-green);
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in-out;
+
+    &--active {
+      transform: none;
+    }
+  }
+
+  @include mobile {
+    width: 50%;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    @include big-desktop {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    @include mr (25px);
+
+    @include big-desktop {
+      @include mr(0);
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--azure-color);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--grey-color);
+      transition: color 0.3s ease-in-out;
+    }
+  }
+}

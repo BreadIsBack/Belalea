@@ -1,3 +1,31 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="header__container">
+    <a class="header__logo logo">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img loading="lazy" src="img/logo.png" class="image" width="244" height="74" alt="Логотип компании Belalea">
+      </picture>
+    </a>
+    <nav class="nav header__nav" title="Навигация сайта" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link link">О нас</a></li>
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link link">Каталог</a></li>
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link link">Диллерам</a></li>
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link link">Новости</a></li>
+      </ul>
+    </nav>
+    <div class="header__buttons">
+      <form class="header__form">
+        <input class="input-reset header__form-input" type="text">
+        <button class="btn-reset header__form-btn" type="submit"></button>
+      </form>
+      <label class="custom-checkbox">
+        <input type="checkbox" class="custom-checkbox__field">
+        <span class="custom-checkbox__content">Контакты</span>
+      </label>
+    </div>
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+  </div>
 </header>

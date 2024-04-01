@@ -4,6 +4,9 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+// подключение больших компонентов страницы
 @import "./components/header";
 
+//подключение маленьких компонентов
+@import "./components/nav";
+@import "./components/burger";

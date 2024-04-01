@@ -3,10 +3,18 @@
 :root {
   // base
   --font-family: "Open Sans", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --third-family: "Yellowtail", sans-serif;
   --content-width: 1400px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --dark-color: #000;
+  --azure-color: #274c5B;
+  --light-green: #7eB693;
+  --yellow-color: #eff372;
+  --grey-color: #d4d4d4;
+  --dark-grey: #525c60;
 }
