@@ -1,0 +1,22 @@
+.offer {
+  padding: 200px 0;
+  background-color: var(--light-green);
+
+  &__top {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: var(--light-color);
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.hero {
+  padding: 250px 0 280px;
+  margin-bottom: 155px;
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    max-width: 530px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 70px;
+    line-height: 104%;
+
+    @include small-tablet {
+      font-size: 40px;
+    }
+  }
+}

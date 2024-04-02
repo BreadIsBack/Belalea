@@ -1,0 +1,72 @@
+.banner-sub {
+  &__container {
+    border-radius: 20px;
+    background-image: url('../img/banner-sub.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 105px 83px 121px 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      padding: 30px;
+    }
+
+    @include mobile {
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    max-width: 454px;
+    font-size: 50px;
+    color: var(--light-color);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  &__input {
+    padding: 25px;
+    width: 350px;
+    max-width: 350px;
+    min-height: 80px;
+    outline: transparent;
+    border-radius: 20px;
+    font-family: var(--second-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--dark-color);
+
+    &::placeholder {
+      font-family: var(--second-family);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ababab;
+    }
+
+    @include mobile {
+      max-width: 250px;
+    }
+  }
+
+  &__btn {
+    padding: 28px 48px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--light-color);
+    background-color: var(--light-green);
+  }
+}

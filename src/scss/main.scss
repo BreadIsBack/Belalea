@@ -6,7 +6,20 @@
 
 // подключение больших компонентов страницы
 @import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/products";
+@import "./components/products-list";
+@import "./components/reviews";
+@import "./components/offer";
+@import "./components/eco";
+@import "./components/news";
+@import "./components/footer";
 
 //подключение маленьких компонентов
 @import "./components/nav";
 @import "./components/burger";
+@import "./components/banner-promo";
+@import "./components/banner-action";
+@import "./components/banner-sub";
+@import "./components/news-box";

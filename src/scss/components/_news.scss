@@ -1,0 +1,23 @@
+.news {
+  margin-bottom: 220px;
+  &__top {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &__top-titles {
+    max-width: 700px;
+  }
+
+  &__title {
+    font-size: 50px;
+
+    @include mobile {
+      font-size: 35px;
+    }
+  }
+}
