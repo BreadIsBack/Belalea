@@ -1,0 +1,159 @@
+.advantages {
+  margin-bottom: 200px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    margin-bottom: 90px;
+    display: flex;
+    align-items: stretch;
+    gap: 50px;
+
+    @include small-tablet {
+      gap: 0;
+    }
+  }
+
+  &__inner {
+    max-width: 676px;
+    display: flex;
+    flex-direction: column;
+
+    @include small-tablet {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 50px;
+
+    @include small-tablet {
+      font-size: 35px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    max-width: 486px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item-subtitle {
+    margin: 0;
+    margin-bottom: 12px;
+    width: fit-content;
+    padding: 30px 30px 30px 53px;
+    border-radius: 49px;
+    position: relative;
+    background-color: #ececec;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      top: 50%;
+      left: 27px;
+      transform: translateY(-50%);
+      background-color: var(--light-green);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      top: 50%;
+      left: 31px;
+      transform: translateY(-50%);
+      background-color: #ececec;
+    }
+  }
+
+  &__item-descr {
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  &__img {
+    height: 100%;
+    border-radius: 30px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__icons-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    @include mobile {
+      gap: 15px;
+    }
+  }
+
+  &__icons-item {
+    padding: 160px 20px 80px;
+    max-width: 257px;
+    position: relative;
+    text-align: center;
+    
+    &::before {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--1 {
+      &::before {
+        content: url('../img/advantages/advantages-1.svg');
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: url('../img/advantages/advantages-2.svg');
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: url('../img/advantages/advantages-3.svg');
+      }
+    }
+  }
+
+  &__icons-subtitle {
+    margin-bottom: 12px;
+    font-size: 25px;
+  }
+
+  &__icons-text {
+    margin: 0;
+  }
+}

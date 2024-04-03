@@ -1,0 +1,20 @@
+.page-title {
+  background-image: url('../img/about-title-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 70px;
+  }
+}
+
+.about-page {
+  margin-bottom: 68px;
+}
