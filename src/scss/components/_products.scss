@@ -13,10 +13,4 @@
     margin-bottom: 40px;
     font-size: 50px;
   }
-
-  &__list {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
 }

@@ -1,6 +1,6 @@
-import Swiper, {Pagination, Navigation} from 'swiper';
+import Swiper, {Pagination, Navigation, Thumbs} from 'swiper';
 
-Swiper.use([Pagination, Navigation]);
+Swiper.use([Pagination, Navigation, Thumbs]);
 
 const bullets = document.querySelectorAll('.swiper-pagination-bullet');
 
@@ -22,4 +22,17 @@ const reviewsSlider = new Swiper('.reviews__swiper', {
     clickable: true,
   },
   allowTouchMove: true,
+});
+
+const catalogItemSlider = new Swiper('.catalog-item__swiper', {
+  slidesPerView: 1,
+  allowTouchMove: true,
+  slidersPerGroup: 1,
+
+  thumbs: {
+    swiper: {
+      el: '.catalog-item__swiper-mini',
+      slidesPerView: 4,
+    }
+  },
 });

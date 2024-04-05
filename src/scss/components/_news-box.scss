@@ -15,11 +15,27 @@
     background-size: cover;
 
     &--1 {
-      background-image: url('../img/news-box/news-1.jpg');
+      background-image: url('../img/news-box/news-1.png');
     }
 
     &--2 {
-      background-image: url('../img/news-box/news-2.jpg');
+      background-image: url('../img/news-box/news-2.png');
+    }
+
+    &--3 {
+      background-image: url('../img/news-box/news-3.png');
+    }
+
+    &--4 {
+      background-image: url('../img/news-box/news-4.png');
+    }
+
+    &--5 {
+      background-image: url('../img/news-box/news-5.png');
+    }
+
+    &--6 {
+      background-image: url('../img/news-box/news-6.png');
     }
   }
 
@@ -57,5 +73,17 @@
   &__item-text {
     margin: 0;
     margin-bottom: 15px;
+  }
+
+  &__item-link {
+    &--articles {
+      padding: 0;
+      padding-right: 28px;
+      color: var(--azure-color);
+
+      &::after {
+        right: 0;
+      }
+    }
   }
 }
