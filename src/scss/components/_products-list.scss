@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: center;
       border-radius: 30px;
-      top: 0;
+      top: 15px;
       left: 20px;
       position: absolute;
       content: attr(data-attr);
@@ -28,7 +28,7 @@
 
   &__item-link {
     border-radius: 30px;
-    padding: 55px 20px 30px;
+    padding: 55px 20px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
