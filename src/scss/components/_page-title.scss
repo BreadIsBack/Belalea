@@ -1,7 +1,7 @@
 .page-title {
-  background-image: url('../img/about-title-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f3f2f7;
 
   &__container {
     min-height: 450px;
@@ -17,16 +17,20 @@
 
 .about-page {
   margin-bottom: 68px;
+  background-image: url('../img/about-title-bg.png');
 }
 
 .catalog-page {
   margin-bottom: 68px;
+  background-image: url('../img/catalog-bg.png');
 }
 
 .catalog-item-page {
   margin-bottom: 130px;
+  background-image: url('../img/catalog-item-bg.png');
 }
 
 .news-page {
   margin-bottom: 120px;
+  background-image: url('../img/news-bg.png');
 }

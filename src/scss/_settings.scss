@@ -22,6 +22,7 @@ html {
   min-height: 100%;
   font-size: 18px;
   font-weight: 400;
+  line-height: 165%;
   color: var(--dark-grey);
 }
 
@@ -125,12 +126,14 @@ a {
   margin: 0;
   font-family: var(--second-family);
   font-weight: 900;
+  line-height: normal;
   color: var(--azure-color);
 }
 
 .small-title {
   font-family: var(--fourth-family);
   font-size: 48px;
+  line-height: normal;
   color: var(--light-green);
 }
 

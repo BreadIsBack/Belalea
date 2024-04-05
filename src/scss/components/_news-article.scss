@@ -1,3 +1,149 @@
 .news-article {
-  
+  &__top {
+    margin-bottom: 300px;
+    min-height: 900px;
+    position: relative;
+    background-image: url('../img/news-article/article-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__top-box {
+    padding: 76px 82px;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 385px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: -217px;
+    transform: translateX(-50%);
+    background-color: var(--light-color);
+    box-shadow: 3px 3px 3px 2px rgba(204, 204, 204, 0.5);
+
+    @include mobile {
+      padding: 30px;
+    }
+  }
+
+  &__date-text {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__date-text,
+  &__time {
+    font-family: var(--second-family);
+    font-weight: 600;
+    color: var(--azure-color);
+  }
+
+  &__time {
+    font-weight: 400;
+  }
+
+  &__main-title {
+    margin-bottom: 20px;
+    font-size: 60px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &__top-text {
+    margin: 0;
+    max-width: 725px;
+  }
+
+  &__container {
+    max-width: 936px;
+    margin-bottom: 220px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 45px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    counter-reset: number 0;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item {
+    padding-left: 30px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--ul {
+      &::before {
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 4px;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        background-color: #525c60;
+      }
+    }
+
+    &--ol {
+      counter-increment: number;
+
+      &::before {
+        position: absolute;
+        content: counter(number);
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__point {
+    margin: 0;
+  }
+
+  &__blockquote {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 70px 60px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #f1edea;
+
+    @include mobile {
+      padding: 30px;
+    }
+  }
+
+  &__blockquote-text {
+    margin: 0;
+    font-weight: 700;
+    line-height: 165%;
+    font-size: 20px;
+  }
 }
