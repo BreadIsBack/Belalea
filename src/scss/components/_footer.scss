@@ -99,6 +99,7 @@
   }
 
   &__social {
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,6 +155,10 @@
   &__utility-item {
     &:not(:last-child) {
       margin-bottom: 20px;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
     }
   }
 
