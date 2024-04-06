@@ -1,0 +1,39 @@
+.socials-list {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: var(--azure-color);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--light-green);
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      background-color: #eff6f1;
+    }
+  }
+
+  &__svg {
+    width: 19px;
+    height: 19px;
+    fill: currentColor;
+  }
+}

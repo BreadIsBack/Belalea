@@ -2,10 +2,10 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --second-family: "Roboto", sans-serif;
-  --third-family: "Yellowtail", sans-serif;
-  --fourth-family: "RosaMarena", sans-serif;
+  --font-family: "Open Sans";
+  --second-family: "Roboto";
+  --third-family: "Yellowtail";
+  --fourth-family: "RosaMarena";
   --content-width: 1400px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
