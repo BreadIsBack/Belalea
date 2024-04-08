@@ -17,7 +17,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include big-desktop {
+  @include tablet {
     display: block;
   }
 }

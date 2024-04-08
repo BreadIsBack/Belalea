@@ -13,62 +13,78 @@
     align-items: center;
 
     @include big-desktop {
-      padding-right: 60px;
+      padding-right: 70px;
     }
   }
 
   &__logo {
     margin-right: auto;
-
-    @include big-desktop {
-      margin-right: 5px;
-    }
   }
 
   &__nav {
     margin-right: auto;
   }
 
-  &__buttons {
+  &__search {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
 
     @include tablet {
       display: none;
     }
+
+    &:hover {
+      .header__form-input {
+        width: 320px;
+        transition: width 0.3s ease-in-out;
+      }
+    }
   }
 
   &__form {
-    margin-right: 20px;
     max-width: 375px;
-    width: 100%;
     position: relative;
   }
 
   &__form-input {
     padding: 10px 60px 10px 10px;
-    width: 100%;
+    width: 0;
     height: 66px;
     border-radius: 36px;
     border: none;
     outline: transparent;
     background-color: var(--grey-color);
     color: var(--azure-color);
+    transition: width 0.3s ease-in-out;
+
+    &::placeholder {
+      font-family: var(--second-family);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ababab;
+    }
+
+    &:focus {
+      width: 320px;
+      transition: width 0.3s ease-in-out;
+    }
   }
 
   &__form-btn {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 6px;
     width: 56px;
     height: 56px;
     transform: translateY(-50%);
     background-image: url('../img/btn-search.svg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .custom-checkbox {
-    @include custom-checkbox;
   }
 }

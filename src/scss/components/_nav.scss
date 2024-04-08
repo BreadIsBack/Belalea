@@ -1,5 +1,5 @@
 .nav {
-  @include big-desktop {
+  @include tablet {
     position: fixed;
     display: block;
     padding: 30px;
@@ -27,16 +27,17 @@
     height: 100%;
     align-items: center;
 
-    @include big-desktop {
+    @include tablet {
       flex-direction: column;
       justify-content: space-around;
     }
   }
 
   &__item {
+
     @include mr (25px);
 
-    @include big-desktop {
+    @include tablet {
       @include mr(0);
     }
   }
