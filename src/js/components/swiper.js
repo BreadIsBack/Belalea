@@ -17,6 +17,7 @@ bullets.forEach(bullet => {
 
 const reviewsSlider = new Swiper('.reviews__swiper', {
   slidesPerView: 1,
+  spaceBetween: 10,
   pagination: {
     el: '.reviews__pagination',
     clickable: true,
@@ -33,6 +34,7 @@ const catalogItemSlider = new Swiper('.catalog-item__swiper', {
     swiper: {
       el: '.catalog-item__swiper-mini',
       slidesPerView: 4,
+      spaceBetween: 10,
     }
   },
 });
