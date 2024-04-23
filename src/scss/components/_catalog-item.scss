@@ -35,9 +35,9 @@
   }
 
   &__wrapper-mini {
-    @include mobile {
-      flex-wrap: wrap;
-    }
+    // @include mobile {
+    //   flex-wrap: wrap;
+    // }
   }
 
   &__box {
